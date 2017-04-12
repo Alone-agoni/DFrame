@@ -1,0 +1,12 @@
+{
+	"require": {
+		"noahbuscher/macaw": "dev-master"
+	},
+
+  	"autoload": {
+		"psr-4": {
+			"Frontend\\Controller\\":"apps/frontend/Controller",
+			"Backend\\Controller\\":"apps/backend/Controller"
+		}
+	}
+}
