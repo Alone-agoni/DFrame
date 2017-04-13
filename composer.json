@@ -3,7 +3,8 @@
 		"noahbuscher/macaw": "dev-master",
 		"illuminate/database": "*",
 		"filp/whoops": "*",
-		"twig/twig":"*"
+		"twig/twig":"*",
+		"monolog/monolog": "1.2.*"
 	},
 
   	"autoload": {

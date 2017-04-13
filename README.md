@@ -10,6 +10,7 @@ DFrame 框架是一个轻量级PHP框架，此框架是由composer搭建起来�
 * Eloquent(ORM)
 * whoops(错误提示)
 * twig(模板引擎)
+* monolog(日志)
 
 以上4个组件，只需要会Eloquent和twig就能使用此框架进行开发。
 
@@ -19,5 +20,39 @@ DFrame 框架是一个轻量级PHP框架，此框架是由composer搭建起来�
 * 验证码
 * 文件上传
 * Redis
-* 日志
 * 等等...
+
+#### tiwg调用模板
+
+```
+use Lib\Controller;
+
+class DefaultController extends Controller
+{
+	function index()
+	{
+		$assign = array(
+			'title' => '(dframe.com)',
+			'name' => 'Tome!'
+		);
+		$this->render("Default/index",$assign);
+	}
+}
+```
+
+#### monolog使用方式
+
+```
+use Monolog\Logger;
+use Monolog\Handler\StreamHandler;
+```
+
+```
+function index()
+{
+	$log = new Logger('DefaultController_index');
+	$logHandler = new StreamHandler('backend.log', $log::WARNING);
+	$log->pushHandler($logHandler);
+	$log->addWarning('omg what happend!');
+}
+```

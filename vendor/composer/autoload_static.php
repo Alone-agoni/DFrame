@@ -128,6 +128,13 @@ class ComposerStaticInit77227c15d3b855f275d9912f0395ed2d
                 0 => __DIR__ . '/..' . '/twig/twig/lib',
             ),
         ),
+        'M' => 
+        array (
+            'Monolog' => 
+            array (
+                0 => __DIR__ . '/..' . '/monolog/monolog/src',
+            ),
+        ),
         'D' => 
         array (
             'Doctrine\\Common\\Inflector\\' => 
