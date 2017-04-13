@@ -7,4 +7,9 @@ class DefaultController
 	{
 		echo "<h2>Welcome Backend！</h2>";
 	}
+	
+	function hello()
+	{
+		echo "<h2>Welcome Backend！Hello！</h2>";
+	}
 }
