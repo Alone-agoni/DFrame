@@ -16,6 +16,7 @@ return array(
     'Illuminate\\Database\\' => array($vendorDir . '/illuminate/database'),
     'Illuminate\\Contracts\\' => array($vendorDir . '/illuminate/contracts'),
     'Illuminate\\Container\\' => array($vendorDir . '/illuminate/container'),
+    'Gregwar\\Captcha\\' => array($vendorDir . '/gregwar/captcha'),
     'Frontend\\Model\\' => array($baseDir . '/apps/frontend/Model'),
     'Frontend\\Controller\\' => array($baseDir . '/apps/frontend/Controller'),
     'Carbon\\' => array($vendorDir . '/nesbot/carbon/src/Carbon'),

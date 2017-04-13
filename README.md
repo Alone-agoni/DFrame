@@ -11,18 +11,18 @@ DFrame 框架是一个轻量级PHP框架，此框架是由composer搭建起来�
 * whoops(错误提示)
 * twig(模板引擎)
 * monolog(日志)
+* captcha(验证码)
 
-以上4个组件，只需要会Eloquent和twig就能使用此框架进行开发。
+以上6个组件，只需要会Eloquent和twig就能使用此框架进行开发。
 
 以后打算集成更多好用的组件
 
 * 邮件发送
-* 验证码
 * 文件上传
 * Redis
 * 等等...
 
-#### tiwg调用模板
+#### 调用tiwg模板
 
 ```
 use Lib\Controller;
@@ -55,4 +55,27 @@ function index()
 	$log->pushHandler($logHandler);
 	$log->addWarning('omg what happend!');
 }
+```
+
+#### captcha验证码使用
+```
+# controller
+use Gregwar\Captcha\CaptchaBuilder;
+
+function verify()
+{
+	$builder = new CaptchaBuilder;
+	$builder->build();
+	$builder->output();
+	$_SESSION['phrase'] = $builder->getPhrase();
+}
+
+# template
+<img src="/verify">
+
+# routes.php
+
+$routes = array(
+	'verify' => "DefaultController@verify",
+);
 ```

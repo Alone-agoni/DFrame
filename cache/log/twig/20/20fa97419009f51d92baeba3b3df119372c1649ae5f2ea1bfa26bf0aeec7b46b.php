@@ -51,7 +51,9 @@ class __TwigTemplate_8002fe3da124bd208fd62b960020f9043299ad46b04b9109a4fc6a52bce
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['vo'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
         // line 15
-        echo "</body>
+        echo "\t
+\t<img src=\"/verify\">
+</body>
 </html>
 ";
     }
@@ -95,6 +97,8 @@ class __TwigTemplate_8002fe3da124bd208fd62b960020f9043299ad46b04b9109a4fc6a52bce
 \t\t<p>{{ vo.title }}</p>
 \t\t<div>{{ vo.content }}</div>\t\t
 \t{% endfor %}
+\t
+\t<img src=\"/verify\">
 </body>
 </html>
 ", "Default/index.html", "/home/wei/share/DFrame/apps/frontend/view/Default/index.html");

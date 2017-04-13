@@ -41,6 +41,10 @@ class ComposerStaticInit77227c15d3b855f275d9912f0395ed2d
             'Illuminate\\Contracts\\' => 21,
             'Illuminate\\Container\\' => 21,
         ),
+        'G' => 
+        array (
+            'Gregwar\\Captcha\\' => 16,
+        ),
         'F' => 
         array (
             'Frontend\\Model\\' => 15,
@@ -97,6 +101,10 @@ class ComposerStaticInit77227c15d3b855f275d9912f0395ed2d
         'Illuminate\\Container\\' => 
         array (
             0 => __DIR__ . '/..' . '/illuminate/container',
+        ),
+        'Gregwar\\Captcha\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/gregwar/captcha',
         ),
         'Frontend\\Model\\' => 
         array (

@@ -10,7 +10,8 @@ $namespace = "Frontend\Controller\\";
 // All routes array
 $routes = array(
 	'' 		=> "DefaultController@index",
-	'hello' => "DefaultController@hello"
+	'hello' => "DefaultController@hello",
+	'verify' => "DefaultController@verify",
 );
 
 // Parsing the routing 
