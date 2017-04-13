@@ -11,6 +11,7 @@ return array(
     'Symfony\\Component\\Translation\\' => array($vendorDir . '/symfony/translation'),
     'Psr\\Log\\' => array($vendorDir . '/psr/log/Psr/Log'),
     'NoahBuscher\\Macaw\\' => array($vendorDir . '/noahbuscher/macaw'),
+    'Lib\\' => array($baseDir . '/lib'),
     'Illuminate\\Support\\' => array($vendorDir . '/illuminate/support'),
     'Illuminate\\Database\\' => array($vendorDir . '/illuminate/database'),
     'Illuminate\\Contracts\\' => array($vendorDir . '/illuminate/contracts'),

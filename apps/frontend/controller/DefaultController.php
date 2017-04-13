@@ -1,14 +1,19 @@
 <?php
 namespace Frontend\Controller;
+use Lib\Controller;
 use Frontend\Model\Article;
 
-class DefaultController
+class DefaultController extends Controller
 {
 	function index()
 	{
-		echo "<h2>Welcome DFrame!</h2>";
-		$articles = Article::find(2);
-		require dirname(__FILE__).'/../view/Default/index.php';
+		$articles = Article::where('id', '>', 0)->get();
+		$assign = array(
+			'title' => '菜鸟教程(runoob.com)',
+			'name' => 'Tome!',
+			'article' => $articles
+		);
+		$this->render("Default/index",$assign);
 	}
 	
 	function hello()

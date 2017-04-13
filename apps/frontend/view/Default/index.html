@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>{{ title }}</title>
+</head>
+<body>
+    <h1><h2>Welcome DFrame!</h2></h1>
+    <p>{{ name }}</p>
+	
+	{% for vo in article %}
+		<p>{{ vo.title }}</p>
+		<div>{{ vo.content }}</div>		
+	{% endfor %}
+</body>
+</html>

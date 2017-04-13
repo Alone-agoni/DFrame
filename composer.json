@@ -2,7 +2,8 @@
 	"require": {
 		"noahbuscher/macaw": "dev-master",
 		"illuminate/database": "*",
-		"filp/whoops": "*"
+		"filp/whoops": "*",
+		"twig/twig":"*"
 	},
 
   	"autoload": {
@@ -10,7 +11,8 @@
 			"Frontend\\Controller\\":"apps/frontend/Controller",
 			"Backend\\Controller\\":"apps/backend/Controller",
 			"Frontend\\Model\\":"apps/frontend/Model",
-			"Backend\\Model\\":"apps/backend/Model"
+			"Backend\\Model\\":"apps/backend/Model",
+			"Lib\\":"lib/"
 		}
 	}
 }

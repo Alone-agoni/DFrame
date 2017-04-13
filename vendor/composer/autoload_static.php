@@ -30,6 +30,10 @@ class ComposerStaticInit77227c15d3b855f275d9912f0395ed2d
         array (
             'NoahBuscher\\Macaw\\' => 18,
         ),
+        'L' => 
+        array (
+            'Lib\\' => 4,
+        ),
         'I' => 
         array (
             'Illuminate\\Support\\' => 19,
@@ -74,6 +78,10 @@ class ComposerStaticInit77227c15d3b855f275d9912f0395ed2d
         array (
             0 => __DIR__ . '/..' . '/noahbuscher/macaw',
         ),
+        'Lib\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/lib',
+        ),
         'Illuminate\\Support\\' => 
         array (
             0 => __DIR__ . '/..' . '/illuminate/support',
@@ -113,6 +121,13 @@ class ComposerStaticInit77227c15d3b855f275d9912f0395ed2d
     );
 
     public static $prefixesPsr0 = array (
+        'T' => 
+        array (
+            'Twig_' => 
+            array (
+                0 => __DIR__ . '/..' . '/twig/twig/lib',
+            ),
+        ),
         'D' => 
         array (
             'Doctrine\\Common\\Inflector\\' => 
