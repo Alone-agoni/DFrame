@@ -6,33 +6,103 @@ namespace Composer\Autoload;
 
 class ComposerStaticInit77227c15d3b855f275d9912f0395ed2d
 {
+    public static $files = array (
+        '0e6d7bf4a5811bfa5cf40c5ccd6fae6a' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/bootstrap.php',
+        '5255c38a0faeba867671b61dfda6d864' => __DIR__ . '/..' . '/paragonie/random_compat/lib/random.php',
+        '72579e7bd17821bb1321b87411366eae' => __DIR__ . '/..' . '/illuminate/support/helpers.php',
+    );
+
     public static $prefixLengthsPsr4 = array (
+        'S' => 
+        array (
+            'Symfony\\Polyfill\\Mbstring\\' => 26,
+            'Symfony\\Component\\Translation\\' => 30,
+        ),
         'N' => 
         array (
             'NoahBuscher\\Macaw\\' => 18,
         ),
+        'I' => 
+        array (
+            'Illuminate\\Support\\' => 19,
+            'Illuminate\\Database\\' => 20,
+            'Illuminate\\Contracts\\' => 21,
+            'Illuminate\\Container\\' => 21,
+        ),
         'F' => 
         array (
+            'Frontend\\Model\\' => 15,
             'Frontend\\Controller\\' => 20,
+        ),
+        'C' => 
+        array (
+            'Carbon\\' => 7,
         ),
         'B' => 
         array (
+            'Backend\\Model\\' => 14,
             'Backend\\Controller\\' => 19,
         ),
     );
 
     public static $prefixDirsPsr4 = array (
+        'Symfony\\Polyfill\\Mbstring\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/symfony/polyfill-mbstring',
+        ),
+        'Symfony\\Component\\Translation\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/symfony/translation',
+        ),
         'NoahBuscher\\Macaw\\' => 
         array (
             0 => __DIR__ . '/..' . '/noahbuscher/macaw',
+        ),
+        'Illuminate\\Support\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/illuminate/support',
+        ),
+        'Illuminate\\Database\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/illuminate/database',
+        ),
+        'Illuminate\\Contracts\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/illuminate/contracts',
+        ),
+        'Illuminate\\Container\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/illuminate/container',
+        ),
+        'Frontend\\Model\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/apps/frontend/Model',
         ),
         'Frontend\\Controller\\' => 
         array (
             0 => __DIR__ . '/../..' . '/apps/frontend/Controller',
         ),
+        'Carbon\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/nesbot/carbon/src/Carbon',
+        ),
+        'Backend\\Model\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/apps/backend/Model',
+        ),
         'Backend\\Controller\\' => 
         array (
             0 => __DIR__ . '/../..' . '/apps/backend/Controller',
+        ),
+    );
+
+    public static $prefixesPsr0 = array (
+        'D' => 
+        array (
+            'Doctrine\\Common\\Inflector\\' => 
+            array (
+                0 => __DIR__ . '/..' . '/doctrine/inflector/lib',
+            ),
         ),
     );
 
@@ -41,6 +111,7 @@ class ComposerStaticInit77227c15d3b855f275d9912f0395ed2d
         return \Closure::bind(function () use ($loader) {
             $loader->prefixLengthsPsr4 = ComposerStaticInit77227c15d3b855f275d9912f0395ed2d::$prefixLengthsPsr4;
             $loader->prefixDirsPsr4 = ComposerStaticInit77227c15d3b855f275d9912f0395ed2d::$prefixDirsPsr4;
+            $loader->prefixesPsr0 = ComposerStaticInit77227c15d3b855f275d9912f0395ed2d::$prefixesPsr0;
 
         }, null, ClassLoader::class);
     }
