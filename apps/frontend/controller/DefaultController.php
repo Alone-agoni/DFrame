@@ -20,7 +20,8 @@ class DefaultController extends Controller
 	
 	function hello()
 	{
-		echo "<h2>Welcome DFrame！Hello！</h2>";
+		echo "<h2>Welcome DFrame！Hello！</h2>";		
+		echo $_SESSION['phrase'];
 	}
 	
 	function verify()

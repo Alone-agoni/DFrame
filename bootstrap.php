@@ -1,4 +1,5 @@
 <?php
+session_start();
 use Illuminate\Database\Capsule\Manager as Capsule;
 
 // 定义 BASE_PATH
