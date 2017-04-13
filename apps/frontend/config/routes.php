@@ -22,15 +22,9 @@ foreach($routes as $key=>$val){
 	}
 }
 
-/*
-*Macaw::get('(:all)', function($fu) {
-  echo "No match is found routing : <font color='red'>$fu</font>";
-});
-*/
-
 Macaw::$error_callback = function() {
 
-  throw new Exception("路由无匹配项 404 Not Found");
+  throw new Exception("Routing has no matches 404 Not Found");
 
 };
 

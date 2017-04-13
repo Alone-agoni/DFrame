@@ -9,7 +9,7 @@ class DefaultController extends Controller
 	{
 		$articles = Article::where('id', '>', 0)->get();
 		$assign = array(
-			'title' => '菜鸟教程(runoob.com)',
+			'title' => '(dframe.com)',
 			'name' => 'Tome!',
 			'article' => $articles
 		);
