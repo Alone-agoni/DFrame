@@ -13,10 +13,18 @@ class ComposerStaticInit77227c15d3b855f275d9912f0395ed2d
     );
 
     public static $prefixLengthsPsr4 = array (
+        'W' => 
+        array (
+            'Whoops\\' => 7,
+        ),
         'S' => 
         array (
             'Symfony\\Polyfill\\Mbstring\\' => 26,
             'Symfony\\Component\\Translation\\' => 30,
+        ),
+        'P' => 
+        array (
+            'Psr\\Log\\' => 8,
         ),
         'N' => 
         array (
@@ -46,6 +54,10 @@ class ComposerStaticInit77227c15d3b855f275d9912f0395ed2d
     );
 
     public static $prefixDirsPsr4 = array (
+        'Whoops\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/filp/whoops/src/Whoops',
+        ),
         'Symfony\\Polyfill\\Mbstring\\' => 
         array (
             0 => __DIR__ . '/..' . '/symfony/polyfill-mbstring',
@@ -53,6 +65,10 @@ class ComposerStaticInit77227c15d3b855f275d9912f0395ed2d
         'Symfony\\Component\\Translation\\' => 
         array (
             0 => __DIR__ . '/..' . '/symfony/translation',
+        ),
+        'Psr\\Log\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/psr/log/Psr/Log',
         ),
         'NoahBuscher\\Macaw\\' => 
         array (

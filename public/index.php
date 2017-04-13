@@ -1,15 +1,13 @@
 <?php
 error_reporting(E_ALL);
 ini_set('display_errors', '1');
-// Eloquent ORM
-use Illuminate\Database\Capsule\Manager as Capsule;
 
-// Autoload 自动载入
-require "../vendor/autoload.php";
+// 定义 PUBLIC_PATH
+define('PUBLIC_PATH', __DIR__);
 
-$capsule = new Capsule;
-$capsule->addConnection(require '../config/database.php');
-$capsule->bootEloquent();
+// 启动器
+require PUBLIC_PATH.'/../bootstrap.php';
 
-// 载入路由配置
-require "../apps/frontend/config/routes.php";
+// 路由配置、开始处理
+
+require BASE_PATH.'/apps/frontend/config/routes.php';
