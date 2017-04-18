@@ -3,12 +3,17 @@ namespace Frontend\Controller;
 use Lib\Controller;
 use Frontend\Model\Article;
 use Gregwar\Captcha\CaptchaBuilder;
+use Curl\Curl;
 
 class DefaultController extends Controller
 {
 	function index()
 	{
-		
+		$curl = new Curl();
+		$content = $curl->get('http://www.baidu.com/');
+		#echo "<pre>";
+		#var_dump($content);
+		echo $content->response;
 		$articles = Article::where('id', '>', 0)->get();
 		$assign = array(
 			'title' => '(dframe.com)',

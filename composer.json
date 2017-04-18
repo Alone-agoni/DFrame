@@ -5,7 +5,8 @@
 		"filp/whoops": "*",
 		"twig/twig":"*",
 		"monolog/monolog": "1.2.*",
-		"gregwar/captcha": "^1.1"
+		"gregwar/captcha": "^1.1",
+		"curl/curl": "^1.6"
 	},
 
   	"autoload": {

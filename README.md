@@ -12,6 +12,7 @@ DFrame 框架是一个轻量级PHP框架，此框架是由composer搭建起来�
 * twig(模板引擎)
 * monolog(日志)
 * captcha(验证码)
+* curl(CURL)
 
 以上6个组件，只需要会Eloquent和twig就能使用此框架进行开发。
 
@@ -79,3 +80,17 @@ $routes = array(
 	'verify' => "DefaultController@verify",
 );
 ```
+
+#### curl使用方式
+
+```
+use Curl\Curl;
+
+$curl = new Curl();
+$content = $curl->get('http://www.baidu.com/');
+#echo "<pre>";
+#var_dump($content);
+echo $content->response;
+```
+
+参考文档：https://github.com/php-mod/curl
